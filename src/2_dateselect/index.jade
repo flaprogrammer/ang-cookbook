@@ -1,0 +1,16 @@
+﻿doctype html
+html(lang='ru', ng-app="cookbookApp")
+	head
+		meta(charset='UTF-8')
+		title Title
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		.main(ng-controller="MainController").
+			<dateselect model="current"></dateselect><br/>
+			<dateselect model="current"></dateselect><br/>
+			{{current | date:'yyyy-MM-dd'}}
+
+		script(type='text/javascript', src='script.js')
+
